@@ -1,7 +1,7 @@
 {
     "name": "cortex/auth-tenantable",
     "description": "Cortex Auth is a frontend layer for the powerful authentication, authorization and verification package rinvex/laravel-auth on top of Laravel. It has all required controllers, views, routes, and other required assets to run a fully functional user management system with complete dashboard out of the box.",
-    "type": "cortex-module",
+    "type": "cortex-extension",
     "keywords": [
         "authentication",
         "authorization",
@@ -110,7 +110,7 @@
                 "Cortex\\Auth\\Providers\\AuthTenantableServiceProvider"
             ]
         },
-        "cortex-module": {
+        "cortex": {
             "extends": "cortex/auth"
         }
     },
