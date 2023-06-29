@@ -39,9 +39,9 @@ class MemberTenantable extends BaseMember
             $tenants = collect($tenants)->filter();
 
             $model->tenants->pluck('id')->similar($tenants) || activity()->performedOn($model)->withProperties([
-                    'attributes' => ['tenants' => $tenants],
-                    'old' => ['tenants' => $model->tenants->pluck('id')->toArray()]
-                ])->log('updated');
+                'attributes' => ['tenants' => $tenants],
+                'old' => ['tenants' => $model->tenants->pluck('id')->toArray()],
+            ])->log('updated');
 
             $model->syncTenants($tenants);
         });

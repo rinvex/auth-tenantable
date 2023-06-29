@@ -9,9 +9,7 @@ Route::domain('{adminarea}')->group(function () {
     Route::name('adminarea.')
          ->middleware(['web', 'nohttpcache'])
          ->prefix(route_prefix('adminarea'))->group(function () {
-
              Route::middleware(['can:access-adminarea'])->group(function () {
-
                  // Managers Routes
                  Route::name('cortex.auth.managers.')->prefix('managers')->group(function () {
                      Route::match(['get', 'post'], '/')->name('index')->uses([ManagersController::class, 'index']);
@@ -26,7 +24,6 @@ Route::domain('{adminarea}')->group(function () {
                      Route::delete('{manager}')->name('destroy')->uses([ManagersController::class, 'destroy']);
                      Route::delete('{manager}/media/{media}')->name('media.destroy')->uses([ManagersMediaController::class, 'destroy']);
                  });
-
              });
          });
 });
