@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Cortex\Auth\Http\Controllers\Tenantarea;
 
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
+use Illuminate\Support\Carbon;
 use Illuminate\Auth\Events\Registered;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Database\Eloquent\Builder;
