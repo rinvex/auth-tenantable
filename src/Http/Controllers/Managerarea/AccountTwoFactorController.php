@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Cortex\Auth\Http\Controllers\Managerarea;
 
-use Carbon\Carbon;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Arr;
 use Illuminate\Http\Request;
 use PragmaRX\Google2FA\Google2FA;
