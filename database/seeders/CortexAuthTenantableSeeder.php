@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Cortex\Auth\Database\Seeders;
 
-use Illuminate\Database\Seeder;
+use Cortex\Auth\Database\Seeders\CortexAuthSeeder as BaseCortexAuthSeeder;
 
-class CortexAuthTenantableSeeder extends Seeder
+class CortexAuthTenantableSeeder extends BaseCortexAuthSeeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,8 @@ class CortexAuthTenantableSeeder extends Seeder
      */
     public function run()
     {
+        parent::run();
+
         $abilities = [
             ['name' => 'list', 'title' => 'List managers', 'entity_type' => 'manager'],
             ['name' => 'import', 'title' => 'Import managers', 'entity_type' => 'manager'],
