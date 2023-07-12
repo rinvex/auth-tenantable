@@ -27,5 +27,7 @@ class AuthTenantableServiceProvider extends ServiceProvider
         $this->registerModels([
             'cortex.auth.manager' => Manager::class,
         ]);
+
+        $this->app->singleton(\Cortex\Auth\Database\Seeders\CortexAuthSeeder::class, \Cortex\Auth\Database\Seeders\CortexAuthTenantableSeeder::class);
     }
 }

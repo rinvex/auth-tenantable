@@ -65,11 +65,6 @@ Breadcrumbs::for('tenantarea.cortex.auth.account.password', function (Generator 
     $breadcrumbs->push(trans('cortex/auth::common.account_password'), route('tenantarea.cortex.auth.account.password'));
 });
 
-Breadcrumbs::for('tenantarea.cortex.auth.account.attributes', function (Generator $breadcrumbs) {
-    $breadcrumbs->parent('tenantarea.home');
-    $breadcrumbs->push(trans('cortex/auth::common.account_attributes'), route('tenantarea.cortex.auth.account.attributes'));
-});
-
 Breadcrumbs::for('tenantarea.cortex.auth.account.sessions', function (Generator $breadcrumbs) {
     $breadcrumbs->parent('tenantarea.home');
     $breadcrumbs->push(trans('cortex/auth::common.account_sessions'), route('tenantarea.cortex.auth.account.sessions'));
