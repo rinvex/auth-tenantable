@@ -73,11 +73,6 @@ Breadcrumbs::for('managerarea.cortex.auth.members.activities', function (Generat
     $breadcrumbs->push(trans('cortex/auth::common.activities'), route('managerarea.cortex.auth.members.activities', ['member' => $member]));
 });
 
-Breadcrumbs::for('managerarea.cortex.auth.members.attributes', function (Generator $breadcrumbs, Member $member) {
-    $breadcrumbs->parent('managerarea.cortex.auth.members.edit', $member);
-    $breadcrumbs->push(trans('cortex/auth::common.attributes'), route('managerarea.cortex.auth.members.attributes', ['member' => $member]));
-});
-
 Breadcrumbs::for('managerarea.cortex.auth.managers.index', function (Generator $breadcrumbs) {
     $breadcrumbs->parent('managerarea.home');
     $breadcrumbs->push(trans('cortex/auth::tenantable.managers'), route('managerarea.cortex.auth.managers.index'));
@@ -111,11 +106,6 @@ Breadcrumbs::for('managerarea.cortex.auth.managers.logs', function (Generator $b
 Breadcrumbs::for('managerarea.cortex.auth.managers.activities', function (Generator $breadcrumbs, Manager $manager) {
     $breadcrumbs->parent('managerarea.cortex.auth.managers.edit', $manager);
     $breadcrumbs->push(trans('cortex/auth::common.activities'), route('managerarea.cortex.auth.managers.activities', ['manager' => $manager]));
-});
-
-Breadcrumbs::for('managerarea.cortex.auth.managers.attributes', function (Generator $breadcrumbs, Manager $manager) {
-    $breadcrumbs->parent('managerarea.cortex.auth.managers.edit', $manager);
-    $breadcrumbs->push(trans('cortex/auth::common.attributes'), route('managerarea.cortex.auth.managers.attributes', ['manager' => $manager]));
 });
 
 // Account Breadcrumbs
@@ -172,11 +162,6 @@ Breadcrumbs::for('managerarea.cortex.auth.account.settings', function (Generator
 Breadcrumbs::for('managerarea.cortex.auth.account.password', function (Generator $breadcrumbs) {
     $breadcrumbs->parent('managerarea.home');
     $breadcrumbs->push(trans('cortex/auth::common.account_password'), route('managerarea.cortex.auth.account.password'));
-});
-
-Breadcrumbs::for('managerarea.cortex.auth.account.attributes', function (Generator $breadcrumbs) {
-    $breadcrumbs->parent('managerarea.home');
-    $breadcrumbs->push(trans('cortex/auth::common.account_attributes'), route('managerarea.cortex.auth.account.attributes'));
 });
 
 Breadcrumbs::for('managerarea.cortex.auth.account.sessions', function (Generator $breadcrumbs) {

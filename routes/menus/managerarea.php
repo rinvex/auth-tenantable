@@ -24,7 +24,6 @@ Menu::register('managerarea.header.user', function (MenuGenerator $menu) {
 Menu::register('managerarea.cortex.auth.account.sidebar', function (MenuGenerator $menu) {
     $menu->route(['managerarea.cortex.auth.account'], trans('cortex/auth::common.account'), null, 'fa fa-user');
     $menu->route(['managerarea.cortex.auth.account.settings'], trans('cortex/auth::common.settings'), null, 'fa fa-cogs');
-    //$menu->route(['managerarea.cortex.auth.account.attributes'], trans('cortex/auth::common.attributes'), null, 'fa fa-leaf');
     $menu->route(['managerarea.cortex.auth.account.sessions'], trans('cortex/auth::common.sessions'), null, 'fa fa-list-alt');
     $menu->route(['managerarea.cortex.auth.account.password'], trans('cortex/auth::common.password'), null, 'fa fa-key');
     $menu->route(['managerarea.cortex.auth.account.twofactor'], trans('cortex/auth::common.twofactor'), null, 'fa fa-lock');
