@@ -29,5 +29,6 @@ class AuthTenantableServiceProvider extends ServiceProvider
         ]);
 
         $this->app->singleton(\Cortex\Auth\Database\Seeders\CortexAuthSeeder::class, \Cortex\Auth\Database\Seeders\CortexAuthTenantableSeeder::class);
+        $this->app->singleton(\Cortex\Auth\Console\Commands\MigrateCommand::class, \Cortex\Auth\Console\Commands\MigrateTenantableCommand::class);
     }
 }
