@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v1.0.5] - 2023-07-31
+- Simplify imports by removing unnecessary use statements
+- Move username, email, and password validation rules to config file
+- Update and tweak password validation rule
+
 ## [v1.0.4] - 2023-07-14
 - Override migration commands
 
@@ -22,6 +27,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2023-06-22
 - Initial draft commit / split tenancy features to module extension
 
+[v1.0.5]: https://github.com/rinvex/auth-tenantable/compare/v1.0.4...v1.0.5
 [v1.0.4]: https://github.com/rinvex/auth-tenantable/compare/v1.0.3...v1.0.4
 [v1.0.3]: https://github.com/rinvex/auth-tenantable/compare/v1.0.2...v1.0.3
 [v1.0.2]: https://github.com/rinvex/auth-tenantable/compare/v1.0.1...v1.0.2
