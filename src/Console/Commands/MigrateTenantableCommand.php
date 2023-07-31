@@ -5,10 +5,9 @@ declare(strict_types=1);
 namespace Cortex\Auth\Console\Commands;
 
 use Symfony\Component\Console\Attribute\AsCommand;
-use Cortex\Auth\Console\Commands\MigrateCommand as BaseMigrateCommand;
 
 #[AsCommand(name: 'cortex:migrate:auth')]
-class MigrateTenantableCommand extends BaseMigrateCommand
+class MigrateTenantableCommand extends MigrateCommand
 {
     /**
      * Execute the console command.

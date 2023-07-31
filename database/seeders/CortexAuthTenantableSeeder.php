@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace Cortex\Auth\Database\Seeders;
 
-use Cortex\Auth\Database\Seeders\CortexAuthSeeder as BaseCortexAuthSeeder;
-
-class CortexAuthTenantableSeeder extends BaseCortexAuthSeeder
+class CortexAuthTenantableSeeder extends CortexAuthSeeder
 {
     /**
      * Run the database seeds.

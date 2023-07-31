@@ -87,11 +87,9 @@ class ManagerFormRequest extends FormRequest
         $manager->updateRulesUniques();
         $rules = $manager->getRules();
 
+        $rules['password'][] = 'confirmed';
         $rules['roles'] = 'nullable|array';
         $rules['abilities'] = 'nullable|array';
-        $rules['password'] = $manager->exists
-            ? 'confirmed|min:'.config('cortex.auth.password_min_chars').'|max:'.config('cortex.auth.password_max_chars')
-            : 'required|confirmed|min:'.config('cortex.auth.password_min_chars').'|max:'.config('cortex.auth.password_max_chars');
 
         return in_array($this->getRealMethod(), ['PUT', 'POST', 'PATCH']) ? $rules : [];
     }

@@ -5,10 +5,9 @@ declare(strict_types=1);
 namespace Cortex\Auth\Models;
 
 use Rinvex\Tenants\Traits\Tenantable;
-use Cortex\Auth\Models\Member as BaseMember;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
-class MemberTenantable extends BaseMember
+class MemberTenantable extends Member
 {
     use Tenantable;
 
