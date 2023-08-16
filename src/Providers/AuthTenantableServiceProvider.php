@@ -7,6 +7,7 @@ namespace Cortex\Auth\Providers;
 use Cortex\Auth\Models\Manager;
 use Illuminate\Support\ServiceProvider;
 use Rinvex\Support\Traits\ConsoleTools;
+use Cortex\Auth\Models\MemberTenantable;
 
 class AuthTenantableServiceProvider extends ServiceProvider
 {
@@ -26,6 +27,7 @@ class AuthTenantableServiceProvider extends ServiceProvider
         // Bind eloquent models to IoC container
         $this->registerModels([
             'cortex.auth.manager' => Manager::class,
+            'cortex.auth.member' => MemberTenantable::class,
         ]);
 
         $this->app->singleton(\Cortex\Auth\Database\Seeders\CortexAuthSeeder::class, \Cortex\Auth\Database\Seeders\CortexAuthTenantableSeeder::class);
