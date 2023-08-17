@@ -17,6 +17,7 @@ class CortexAuthTenantableSeeder extends CortexAuthSeeder
 
         $abilities = [
             ['name' => 'list', 'title' => 'List managers', 'entity_type' => 'manager'],
+            ['name' => 'view', 'title' => 'View managers', 'entity_type' => 'manager'],
             ['name' => 'import', 'title' => 'Import managers', 'entity_type' => 'manager'],
             ['name' => 'export', 'title' => 'Export managers', 'entity_type' => 'manager'],
             ['name' => 'create', 'title' => 'Create managers', 'entity_type' => 'manager'],
