@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v1.0.7] - 2023-08-17
+- Seed the new 'view' ability
+
 ## [v1.0.6] - 2023-08-16
 - Register missing model to service container
 
@@ -30,6 +33,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2023-06-22
 - Initial draft commit / split tenancy features to module extension
 
+[v1.0.7]: https://github.com/rinvex/auth-tenantable/compare/v1.0.6...v1.0.7
 [v1.0.6]: https://github.com/rinvex/auth-tenantable/compare/v1.0.5...v1.0.6
 [v1.0.5]: https://github.com/rinvex/auth-tenantable/compare/v1.0.4...v1.0.5
 [v1.0.4]: https://github.com/rinvex/auth-tenantable/compare/v1.0.3...v1.0.4
